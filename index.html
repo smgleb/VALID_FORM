@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="robots" content="noindex, nofollow">
+	<title>HomeWork for lesson 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			Для внесения вашего сайта в каталог, заполните форму:
+		</div>
+		<form action="https://fe.it-academy.by/TestForm.php" name="form_site">
+			<div class="inp-row">
+				<p>Разработчик</p>
+				<input type="text" name="developer" class="input-text input-text_max ">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>Название сайта</p>
+				<input type="text" name="site_name" class="input-text input-text_max">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>URL сайта</p>
+				<input type="text" name="site_url" class="input-text input-text_cen">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>Дата запуска сайта</p>
+				<input type="date" name="site_date" class="input-text">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>Посетителей в сутки</p>
+				<input type="text" name="site_people" class="input-text">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>Email для связи</p>
+				<input type="email" name="site_mail" class="input-text">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>Рубрика каталога</p>
+				<select name="site_select" id="" class="input-text">
+					<option value="1">Бытовая техника</option>
+					<option value="2">Домашний уют</option>
+					<option value="3">Здоровье</option>
+				</select>
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row input-text_select">
+				<p>Рубрика каталога</p>
+				<input type="radio" name="site_radio" value="free" class="input-radio input-radio_pn"> Бесплатное
+				<input type="radio" name="site_radio" value="pay" class="input-radio"> Платное
+				<input type="radio" name="site_radio" value="vip" class="input-radio"> VIP
+				<span class="error-radio" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p>Разрешить отзывы</p>
+				<input type="checkbox" name="site_review" class="input-checkbox">
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<p id='db'>Описание сайта</p>
+				<textarea name="site_description" id="" class="textarea"></textarea>
+				<span class="error" style="display:none">Введите данные корректно!</span>
+			</div>
+			<div class="inp-row">
+				<button class="button" type="reset" name="form_reset">Сбросить</button>
+				<button class="button" type="submit" name="form_submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<script src="js/script.js"></script>
+</body>
