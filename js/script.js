@@ -22,7 +22,7 @@ let all_inp = document.querySelectorAll('input,textarea');
 
 for (let i = 0; i < all_inp.length; i++) {
 	all_inp[i].addEventListener('input', function () {
-		if (all_inp[i].value.trim() === '' && all_inp[i].value.length === 0) {
+		if (all_inp[i].value.trim() === '') {
 			all_inp[i].parentElement.lastElementChild.style.display = 'block'
 		} else {
 			all_inp[i].parentElement.lastElementChild.style.display = 'none'
@@ -46,7 +46,7 @@ site_people.addEventListener('input', function () {
 for (let i = all_inp.length; i >= 0; i--) {
 	form.addEventListener('submit', function (e) {
 
-		if (all_inp[i].value === '' && all_inp[i].value.length === 0) {
+		if (all_inp[i].value.trim() === '') {
 			all_inp[i].parentElement.lastElementChild.style.display = 'block';
 
 			all_inp[i].focus({ preventScroll: true });
